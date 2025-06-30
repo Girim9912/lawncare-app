@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | GreenLawn Care</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Green</span>Lawn Care</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">Our Services</h1>
+                <ul id="services">
+                    <li>
+                        <h3>Lawn Mowing</h3>
+                        <p>Regular mowing keeps your lawn healthy and looking its best. We offer weekly, bi-weekly, or one-time mowing services.</p>
+                        <p>Pricing: $30-$50 per visit</p>
+                    </li>
+                    <li>
+                        <h3>Fertilization & Weed Control</h3>
+                        <p>Our customized fertilization and weed control programs ensure your lawn gets exactly what it needs to thrive.</p>
+                        <p>Pricing: $60-$100 per application</p>
+                    </li>
+                    <li>
+                        <h3>Landscaping</h3>
+                        <p>From design to installation, we create beautiful landscapes that enhance your property's curb appeal.</p>
+                        <p>Pricing: Varies by project</p>
+                    </li>
+                    <li>
+                        <h3>Seasonal Cleanups</h3>
+                        <p>Spring and fall cleanups prepare your lawn for the changing seasons, including leaf removal, aeration, and more.</p>
+                        <p>Pricing: $100-$300</p>
+                    </li>
+                    <li>
+                        <h3>Gutter Cleaning</h3>
+                        <p>Keep your gutters flowing freely with our professional cleaning service.</p>
+                        <p>Pricing: $150-$250</p>
+                    </li>
+                </ul>
+            </article>
+
+            <aside id="sidebar">
+                <div class="dark">
+                    <h3>Get A Quote</h3>
+                    <form class="quote">
+                        <div>
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Email Address">
+                        </div>
+                        <div>
+                            <label>Service</label><br>
+                            <select>
+                                <option>Lawn Mowing</option>
+                                <option>Fertilization</option>
+                                <option>Landscaping</option>
+                                <option>Seasonal Cleanup</option>
+                                <option>Gutter Cleaning</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Message</label><br>
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <section id="quote-calculator">
+        <div class="container">
+            <h2>Instant Quote Calculator</h2>
+            <div class="calculator">
+                <div class="form-group">
+                    <label for="lawn-size">Lawn Size (sq ft):</label>
+                    <input type="number" id="lawn-size" min="100" step="100" value="1000">
+                </div>
+                <div class="form-group">
+                    <label for="service-type">Service Type:</label>
+                    <select id="service-type">
+                        <option value="mowing">Lawn Mowing</option>
+                        <option value="fertilization">Fertilization</option>
+                        <option value="landscaping">Landscaping</option>
+                    </select>
+                </div>
+                <button id="calculate-btn" class="btn">Calculate</button>
+                <div id="quote-result" class="result">
+                    <h3>Estimated Cost: <span id="estimated-cost">$0</span></h3>
+                    <p>This is an estimate. For exact pricing, please contact us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>GreenLawn Care, Copyright &copy; 2023</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/quote-calculator.js"></script>
+</body>
+</html>

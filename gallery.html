@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | GreenLawn Care</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Green</span>Lawn Care</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="current"><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <h1 class="page-title">Our Work</h1>
+            <p>Browse through our gallery to see examples of our lawn care and landscaping projects.</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="mowing">Mowing</button>
+                    <button class="filter-btn" data-filter="landscaping">Landscaping</button>
+                    <button class="filter-btn" data-filter="cleanup">Cleanups</button>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="mowing">
+                        <img src="images/before-after-1.jpg" alt="Lawn Mowing Before and After">
+                        <div class="overlay">
+                            <h3>Residential Lawn Mowing</h3>
+                            <p>Before and after our weekly mowing service</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="landscaping">
+                        <img src="images/before-after-2.jpg" alt="Landscaping Project">
+                        <div class="overlay">
+                            <h3>Complete Landscape Makeover</h3>
+                            <p>Transformed this backyard into an outdoor living space</p>
+                        </div>
+                    </div>
+                    
+                    <!-- More gallery items would go here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials-full">
+        <div class="container">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"GreenLawn Care completely transformed my yard. Their attention to detail is unmatched and my lawn has never looked better!"</p>
+                    <p class="author">- Sarah M., Springfield</p>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Reliable, professional, and great results. I've been using their services for 3 years and couldn't be happier."</p>
+                    <p class="author">- Michael T., Oakdale</p>
+                </div>
+                
+                <!-- More testimonials would go here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>GreenLawn Care, Copyright &copy; 2023</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
