@@ -533,3 +533,25 @@ footer .container {
 .social a:hover {
     color: var(--primary-color);
 }
+/* Contact Form Styles */
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact-form textarea {
+  height: 150px;
+}

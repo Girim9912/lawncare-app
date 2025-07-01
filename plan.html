@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lawn Planning</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Smart Lawn Planning Tool</h1>
+  <form id="lawnForm">
+    <label>Zip Code: <input type="text" name="zip" required /></label><br />
+    <label>Lot Size (sq ft): <input type="number" name="lotSize" required /></label><br />
+    <label>Soil Type:
+      <select name="soilType" required>
+        <option value="clay">Clay</option>
+        <option value="sand">Sand</option>
+        <option value="loam">Loam</option>
+      </select>
+    </label><br />
+    <label>Drainage:
+      <select name="drainage" required>
+        <option value="good">Good</option>
+        <option value="moderate">Moderate</option>
+        <option value="poor">Poor</option>
+      </select>
+    </label><br />
+    <label>Preferred Style:
+      <select name="style" required>
+        <option value="eco">Eco-Friendly</option>
+        <option value="low">Low Maintenance</option>
+        <option value="pet">Pet Friendly</option>
+      </select>
+    </label><br /><br />
+    <button type="submit">Generate Lawn Plan</button>
+  </form>
+
+  <div id="output" style="margin-top: 20px;"></div>
+
+  <script src="js/lawn-planner.js"></script>
+</body>
+</html>
