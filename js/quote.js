@@ -9,12 +9,17 @@ document.getElementById("quoteForm").addEventListener("submit", async function (
     special_requirements: form.get("special_requirements")
   };
 
-  const res = await fetch("https://lawncare-backend.onrender.com/api/generate-quote", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data)
-  });
+  try {
+    const res = await fetch("https://lawncare-backend.onrender.com/api/generate-quote", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
 
-  const result = await res.json();
-  document.getElementById("quoteResult").innerHTML = `<pre>${result.quote}</pre>`;
+    const result = await res.json();
+    document.getElementById("quoteResult").innerHTML = `<pre>${result.quote}</pre>`;
+  } catch (err) {
+    document.getElementById("quoteResult").textContent = "Failed to fetch quote.";
+    console.error("Quote error:", err);
+  }
 });
