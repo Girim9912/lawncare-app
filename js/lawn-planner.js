@@ -3,12 +3,16 @@ document.getElementById("lawnForm").addEventListener("submit", async function (e
   const form = new FormData(e.target);
   const data = Object.fromEntries(form.entries());
 
+  const apiBase = "https://lawncare-backend.onrender.com";
+
+
   // TODO: Replace with your actual backend API URL
-  const response = await fetch("https://your-backend-url/api/plan-lawn", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data)
-  });
+const response = await fetch(`${apiBase}/api/chat`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ message: "Hello" })
+});
+
 
   const result = await response.json();
   document.getElementById("output").innerHTML = `
