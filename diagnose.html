@@ -1,0 +1,31 @@
+<!-- diagnose.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lawn Problem Diagnosis</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Describe Your Lawn Problem</h1>
+  <form id="diagnoseForm">
+    <label>Description: <textarea name="description" required></textarea></label><br>
+    <label>Grass Type: <input type="text" name="grass_type"></label><br>
+    <label>Season: <input type="text" name="season"></label><br>
+    <label>Weather: <input type="text" name="weather"></label><br>
+    <label>Location: <input type="text" name="location"></label><br>
+    <label>Severity:
+      <select name="severity">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+    </label><br>
+    <button type="submit">Diagnose</button>
+  </form>
+
+  <div id="diagnosisResult"></div>
+
+  <script src="js/diagnose.js"></script>
+</body>
+</html>

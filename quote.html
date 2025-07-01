@@ -1,0 +1,22 @@
+<!-- quote.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get a Quote</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Request a Lawn Care Quote</h1>
+  <form id="quoteForm">
+    <label>Services (comma separated): <input type="text" name="services" required></label><br>
+    <label>Lot Size (sq ft): <input type="number" name="lot_size" required></label><br>
+    <label>Location: <input type="text" name="location" required></label><br>
+    <label>Special Requirements: <textarea name="special_requirements"></textarea></label><br>
+    <button type="submit">Get Quote</button>
+  </form>
+  <div id="quoteResult"></div>
+
+  <script src="js/quote.js"></script>
+</body>
+</html>
