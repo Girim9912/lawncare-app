@@ -4,7 +4,7 @@ async function sendMessage() {
   if (!message) return;
 
   const chatlog = document.getElementById("chatlog");
-  chatlog.innerHTML += `<div class="msg user"><strong>You:</strong> ${message}</div>`;
+ chatlog.innerHTML += `<div class="msg bot"><strong>Bot:</strong> ${data.response}</div>`;
   input.value = "";
 
   try {
